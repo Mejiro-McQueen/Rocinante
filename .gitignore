@@ -1,0 +1,20 @@
+_site
+_cache
+.env
+
+# Emacs backup files
+*~
+
+# Emacs auto-save files
+\#*\#
+
+# Emacs lock files
+.#*
+
+# Emacs desktop session files
+.desktop
+.session
+.cache
+
+# Tramp remote file locks
+*#

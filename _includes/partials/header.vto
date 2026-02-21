@@ -1,0 +1,7 @@
+<header class="site-header">
+  <nav>
+    {{ for link in nav }}
+      <a href="{{ link.href }}">{{ link.text }}</a>
+    {{ /for }}
+  </nav>
+</header>

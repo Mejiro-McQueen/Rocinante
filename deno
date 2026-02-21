@@ -1,0 +1,17 @@
+#!/bin/sh
+# deno-docker.sh
+# Run Deno inside Docker with persistent cache and current directory mounted
+
+# Get the script arguments
+ARGS="$@"
+
+docker run \
+    --interactive \
+    --tty \
+    --publish 3000:3000\
+    --rm \
+    --volume "$PWD":/app \
+    --volume "$HOME/.deno":/deno-dir \
+    --workdir /app \
+    denoland/deno:2.6.10 \
+    $ARGS

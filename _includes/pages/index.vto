@@ -1,0 +1,333 @@
+
+<header class="page-banner">
+  <div class="banner-inner">
+    <div class="banner-title">Project Docs</div>
+
+    <nav class="banner-tabs">
+      <a href="#overview" class="tab active">Overview</a>
+      <a href="#guides" class="tab">Guides</a>
+      <a href="#api" class="tab">API</a>
+    </nav>
+  </div>
+
+   <div class="banner-motd">
+     	Welcome! Check out the latest updates and new features today.
+    </div>
+
+</header>
+
+{{ set title = dat.title }}
+<link rel="stylesheet" href="/styles.css" />
+
+
+<main class="content-area">
+<section class="vento-group">
+  <header class="vento-group-header">
+    <h2 class="vento-group-title">Resources</h2>
+    <p class="vento-group-subtitle">Quick access to tools and documentation</p>
+  </header>
+
+<div class="vento-grid">
+  <a href="https://example.com/analytics" class="vento-card">
+    <div class="vento-icon">
+      <!-- Inline SVG -->
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+        <path d="M3 3v18h18" stroke="#4F46E5" stroke-width="2"/>
+        <path d="M7 14l3-6 4 8 3-4" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="vento-content">
+      <h3 class="vento-title">Analytics</h3>
+      <p class="vento-description">View detailed analytics and reports for your data.</p>
+    </div>
+  </a>
+
+  <a href="https://example.com/settings" class="vento-card">
+    <div class="vento-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+        <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" stroke="#10B981" stroke-width="2"/>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 .92l-.02.08a2 2 0 1 1-3.58-2l.02-.07a1.65 1.65 0 0 0-.91-1.01 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-.92-1l-.08-.02a2 2 0 1 1 2-3.58l.07.02a1.65 1.65 0 0 0 1.01.91 1.65 1.65 0 0 0 .33 1.82l-.06.06a2 2 0 1 1 2.83 2.83l.06-.06a1.65 1.65 0 0 0 1.82-.33l.02-.02a1.65 1.65 0 0 0 .91-1.01l.02-.07a2 2 0 1 1 3.58 2l-.02.07a1.65 1.65 0 0 0-.91 1z" stroke="#10B981" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="vento-content">
+      <h3 class="vento-title">Settings</h3>
+      <p class="vento-description">Manage your preferences and configure your account.</p>
+    </div>
+  </a>
+
+  <a href="https://example.com/support" class="vento-card">
+    <div class="vento-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+        <path d="M18 8a6 6 0 1 0-12 0c0 4.5 6 10 6 10s6-5.5 6-10z" stroke="#F59E0B" stroke-width="2"/>
+        <path d="M12 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" stroke="#F59E0B" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="vento-content">
+      <h3 class="vento-title">Support</h3>
+      <p class="vento-description">Get help, view FAQs, and contact support easily.</p>
+    </div>
+  </a>
+
+  <a href="https://example.com/projects" class="vento-card">
+    <div class="vento-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="3" width="7" height="7" stroke="#EF4444" stroke-width="2"/>
+        <rect x="14" y="3" width="7" height="7" stroke="#EF4444" stroke-width="2"/>
+        <rect x="3" y="14" width="7" height="7" stroke="#EF4444" stroke-width="2"/>
+        <rect x="14" y="14" width="7" height="7" stroke="#EF4444" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="vento-content">
+      <h3 class="vento-title">Projects</h3>
+      <p class="vento-description">Browse and manage all your current projects in one place.</p>
+    </div>
+  </a>
+</div>
+</section>
+</main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <p>© 2026 Project Docs</p>
+  </footer>
+
+
+<style>
+
+/* Group container */
+.vento-group {
+  padding: 24px;
+  border-radius: 16px;
+  #background: #f11827;
+  margin-bottom: 24px;
+  opacity: .90;
+  #display: flex;
+  #justify-content: center;
+  #align-items: center;
+}
+
+/* Header */
+.vento-group-header {
+  margin-bottom: 16px;
+  #justify-content: left;
+}
+
+.vento-group-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.vento-group-subtitle {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #6B7280;
+}
+
+.vento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.vento-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.vento-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background-color: #f9fafb;
+}
+
+.vento-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.vento-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.vento-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  transition: color 0.25s ease;
+}
+
+.vento-description {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  color: #6B7280;
+  transition: color 0.25s ease;
+}
+
+.vento-card:hover .vento-title {
+  color: #4F46E5;
+}
+
+.vento-card:hover .vento-description {
+  color: #374151;
+}
+
+@media (max-width: 480px) {
+  .vento-card {
+    gap: 8px;
+    padding: 12px 14px;
+  }
+
+  .vento-title {
+    font-size: 0.95rem;
+  }
+
+  .vento-description {
+    font-size: 0.8rem;
+  }
+}
+
+.banner {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  color: #111827;
+}
+
+.page-banner {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+
+.banner-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+/* Tabs */
+.banner-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  text-decoration: none;
+  color: #6b7280;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+}
+
+.tab:hover {
+  color: #111827;
+}
+
+.tab.active {
+  color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.banner-motd {
+  font-size: 0.875rem;
+  color: #374151;
+  padding: 6px 0;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.content-area {
+  position: relative;
+  flex: 1;                 /* fills space between banner and footer */
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+  overflow: hidden;        /* prevents overflow if image is large */
+
+  /* Background styling */
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;  /* scales image to fit within area */
+}
+
+.page-footer {
+  padding: 16px 24px;
+  text-align: center;
+  background: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  color: #111827;
+}
+
+</style>
+
+
+<script>
+const tabs = document.querySelectorAll(".tab");
+
+function updateTabs() {
+  const hash = location.hash || "#overview";
+  tabs.forEach(tab => tab.classList.toggle("active", tab.getAttribute("href") === hash));
+}
+
+window.addEventListener("hashchange", updateTabs);
+updateTabs();
+
+function setBackground() {
+  const bannerHeight = document.querySelector('.page-banner').offsetHeight;
+  const footerHeight = document.querySelector('.page-footer').offsetHeight;
+  const contentArea = document.querySelector('.content-area');
+  const height = window.innerHeight - bannerHeight - footerHeight;
+  contentArea.style.height = height + "px";
+
+const images = [
+  '/files/backgrounds/background.jpg',
+  '/files/backgrounds/ruri1.png',
+  '/files/backgrounds/rt.png'
+];
+
+  const randomIndex = Math.floor(Math.random() * images.length);
+  contentArea.style.backgroundImage = `url('${images[randomIndex]}')`;
+  contentArea.style.backgroundSize = "contain";
+}
+
+function resizeBackground() {
+  const bannerHeight = document.querySelector('.page-banner').offsetHeight;
+  const footerHeight = document.querySelector('.page-footer').offsetHeight;
+  const contentArea = document.querySelector('.content-area');
+  const height = window.innerHeight - bannerHeight - footerHeight;
+  contentArea.style.height = height + "px";
+  
+  contentArea.style.backgroundSize = "contain";
+}
+
+window.addEventListener("resize", resizeBackground);
+window.addEventListener("DOMContentLoaded", setBackground);
+</script>
