@@ -1,0 +1,34 @@
+<script>
+function setBackground() {
+  const bannerHeight = document.querySelector('.page-banner').offsetHeight;
+  const footerHeight = document.querySelector('.page-footer').offsetHeight;
+  const contentArea = document.querySelector('.content-area');
+  const height = window.innerHeight - bannerHeight - footerHeight;
+  contentArea.style.height = height + "px";
+
+const images = [
+  '/files/backgrounds/dq1.jpg',
+  '/files/backgrounds/dq2.png',
+  '/files/backgrounds/dq3.jpg',
+  '/files/backgrounds/dq4.jpg',
+  '/files/backgrounds/dq5.jpg',
+];
+
+  const randomIndex = Math.floor(Math.random() * images.length);
+  contentArea.style.backgroundImage = `url('${images[randomIndex]}')`;
+  contentArea.style.backgroundSize = "contain";
+}
+
+function resizeBackground() {
+  const bannerHeight = document.querySelector('.page-banner').offsetHeight;
+  const footerHeight = document.querySelector('.page-footer').offsetHeight;
+  const contentArea = document.querySelector('.content-area');
+  const height = window.innerHeight - bannerHeight - footerHeight;
+  contentArea.style.height = height + "px";
+  
+  contentArea.style.backgroundSize = "contain";
+}
+
+window.addEventListener("resize", resizeBackground);
+window.addEventListener("DOMContentLoaded", setBackground);
+</script>

@@ -1,8 +1,3 @@
-mascots:
-  - "ruri1.png"
-  - "ruri2.png"
-  - "ruri3.png"
-  - "/files/backgrounds/"
-
-test: "OK"
-title: "OK"
+copyright: © 2026 Mejiro-McQueen
+motd: "Message of the day!"
+logo: /files/logo.png

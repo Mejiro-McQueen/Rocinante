@@ -1,0 +1,155 @@
+
+<body>
+
+{{ include "partials/background.vto" }}
+{{ include "partials/header.vto" }}
+<link rel="stylesheet" href="/styles.css" />
+
+<main class="content-area">
+
+   {{ if content }}
+   <section id="content">
+    {{ content }}
+    </section>
+   {{ /if }}
+
+   {{ for link_group of link_groups }}
+      <section class="link-group" id={{ link_group.name }}>
+        <header class="link-group-header">
+          <h2 class="link-group-title">{{ link_group.name }}</h2>
+          <p class="link-group-subtitle">{{ link_group.description }}</p>
+        </header>
+      
+      <div class="link-grid">
+      {{ for link of link_group.links }}
+      	 <a href={{link.url}} class="link-card">
+      	 <div class="link-icon">
+         <img width="40" height="40" src={{ link.icon }} alt="">
+      	 </div>
+	 <div class="link-content">
+         <h3 class="link-title">{{ link.title }}</h3>
+         <p class="link-description"> {{ link.description }}</p>
+        </div>
+	 </a>
+      {{ /for }}
+     </div>
+     </section>
+   {{ /for }}
+</main>
+
+{{ include "partials/footer.vto" }}
+</body>
+
+<style>
+.link-group {
+  padding: 24px;
+  border-radius: 16px;
+  #background: #f11827;
+  margin-bottom: 24px;
+  opacity: .90;
+  #display: flex;
+  #justify-content: center;
+  align-items: center;
+
+  # Glass
+  background-color: rgba(255, 255, 255, 0.06); 
+  backdrop-filter: blur(20px);                 
+  border: 1px solid rgba(255, 255, 255, 0.12); 
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.link-group-header {
+  margin-bottom: 16px;
+  justify-content: left;
+  color: #333333;
+}
+
+.link-group-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.link-group-subtitle {
+  margin: 4px 0 0;
+  font-size: 1.0rem;
+  color: #333333;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.link-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background-color: #f9fafb;
+}
+
+.link-icon svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.link-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  transition: color 0.25s ease;
+}
+
+.link-description {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  color: #6B7280;
+  transition: color 0.25s ease;
+}
+
+.link-card:hover .link-title {
+  color: #4F46E5;
+}
+
+.link-card:hover .link-description {
+  color: #374151;
+}
+
+@media (max-width: 480px) {
+  .link-card {
+    gap: 8px;
+    padding: 12px 14px;
+  }
+
+  .link-title {
+    font-size: 0.95rem;
+  }
+
+  .link-description {
+    font-size: 0.8rem;
+  }
+}
+</style>
+
+
+
