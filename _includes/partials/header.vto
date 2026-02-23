@@ -1,17 +1,17 @@
 <header class="page-banner">
      <div class="brand">
      {{ if dat.logo }}
-     	  <img src={{ dat.logo }} alt="Logo" />
+     	  <img src="/Rocinante/{{ dat.logo }}" alt="Logo" />
      {{ /if }}
      </div>
 
   <div class="banner-inner">
     <div class="banner-title">{{ title }}</div>
     <nav class="banner-tabs">
-      <a href="/" class="tab">Home</a>
+      <a href="/Rocinante/" class="tab">Home</a>
       {{ for item of nav.menu("/pages/").children }}
       	 {{ for child of item.children }}
-    	    <a class="tab" href="{{ child.data.url }}"> {{ child.data.basename }} </a>
+    	    <a class="tab" href="/Rocinante/{{ child.data.url }}"> {{ child.data.basename }} </a>
          {{ /for }}
       {{ /for }}
     </nav>
@@ -123,7 +123,7 @@
 const tabs = document.querySelectorAll(".tab");
 
 function updateTabs() {
-  const hash = location.hash || location.pathname ||  "/";
+  const hash = location.hash || location.pathname ||  "/Rocinante/";
   console.log(hash);
   tabs.forEach(tab => tab.classList.toggle("active", tab.getAttribute("href") === hash));
 }

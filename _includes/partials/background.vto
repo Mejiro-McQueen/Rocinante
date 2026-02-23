@@ -7,16 +7,17 @@ function setBackground() {
   contentArea.style.height = height + "px";
 
 const images = [
-  '/files/backgrounds/dq1.jpg',
-  '/files/backgrounds/dq2.png',
-  '/files/backgrounds/dq3.jpg',
-  '/files/backgrounds/dq4.jpg',
-  '/files/backgrounds/dq5.jpg',
+  '/Rocinante/files/backgrounds/dq1.jpg',
+  '/Rocinante/files/backgrounds/dq2.png',
+  '/Rocinante/files/backgrounds/dq3.jpg',
+  '/Rocinante/files/backgrounds/dq4.jpg',
+  '/Rocinante/files/backgrounds/dq5.jpg',
 ];
 
   const randomIndex = Math.floor(Math.random() * images.length);
   contentArea.style.backgroundImage = `url('${images[randomIndex]}')`;
   contentArea.style.backgroundSize = "contain";
+  console.log(contentArea.style.backgroundImage)
 }
 
 function resizeBackground() {

@@ -9,7 +9,9 @@ site.add([".css"])
 site.add([".ts"])
 
 site.use(brotli());
-site.use(minifyHTML(/* Options */));
+site.use(minifyHTML());
 site.use(nav());
+
+site.options.location = new URL("https://mejiro-mcqueen.github.io/Rocinante/");
 
 export default site;
